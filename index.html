@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Panda Scoop</title>
+    <link rel="stylesheet" href="styles1.css">
+</head>
+<body>
+    <header>
+        <nav>
+            <div class="top-nav">
+                <span>Panda Scoop</span>
+                <div class="nav-links">
+                    <a class="active" href="index.html">HOME</a>
+                    <a href="#about">About</a>
+                    <a href="#flavours">Flavours</a>
+                    <a href="#contact">Contact Us</a>
+                    <div class="cart-dropdown">
+                        <button class="cart-button">Cart &#x1F6D2;</button>
+                        <div class="dropdown-content">
+                            <ul id="cart-items">
+                                <li>Your cart is empty</li>
+                            </ul>
+                            <p>Total: Rs<span id="total-amount">0.00</span></p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </nav>
+    </header>
+
+    <section id="home">
+        <div class="home">
+            <img src="photo1.jpg" alt="Panda Main">
+            <h1 class="name">Panda Scoop</h1>
+            <button class="explore"><a href="#flavours" id="explore">Explore</a></button>
+        </div>
+    </section>
+    <a id="about"></a>
+    <div class="about-us">
+        <div class="about-us-container">
+            <h1>About <span class="us">Us</span></h1>
+            <p>Introducing "Panda Scoop", a unique, eco-friendly ice cream brand that combines delightful flavors with sustainable packaging. We offer a variety of delicious, creamy flavors made from responsibly sourced ingredients. Our ice cream is served in biodegradable bamboo containers, an eco-conscious alternative to plastic. Bamboo is renewable, biodegradable, and adds a natural touch to the packaging. Panda Scoop caters to the growing demand for environmentally responsible products, allowing customers to indulge without guilt. With each scoop, you’re supporting a greener, cleaner planet. Our goal is to provide high-quality ice cream while minimizing environmental impact. Panda Scoop is perfect for those who love great taste and care about sustainability. Enjoy indulgence with a conscience.</p>
+        </div>
+        <img src="panda-main.jpg">
+    </div>
+
+    <section id="flavours">
+        <div class="title-container">
+            <h1 class="our-store">Flavours</h1>
+        </div>
+        <div class="confec-holder">
+            <div class="sweet-box">
+                <div class="image-holder">
+                    <img src="ps2.jpg" class="confec-image">
+                </div>
+                <div class="confec-name-price">
+                    <p class="confec-name">Jamun</p>
+                    <p class="confec-price">Rs<span class="price">199</span></p>
+                    <button class="add-to-cart" data-name="Jamun Ice Cream" data-price="199">&#x1F6D2 Add to Cart</button>
+                </div>
+            </div>
+            <div class="sweet-box">
+                <div class="image-holder">
+                    <img src="ps1.jpg" class="confec-image">
+                </div>
+                <div class="confec-name-price">
+                    <p class="confec-name">Ice Apple</p>
+                    <p class="confec-price">Rs<span class="price">199</span></p>
+                    <button class="add-to-cart" data-name="Ice Apple" data-price="199">&#x1F6D2 Add to Cart</button>
+                </div>
+            </div>
+            <div class="sweet-box">
+                <div class="image-holder">
+                    <img src="ps3.jpg" class="confec-image">
+                </div>
+                <div class="confec-name-price">
+                    <p class="confec-name">Kiwi</p>
+                    <p class="confec-price">Rs<span class="price">199</span></p>
+                    <button class="add-to-cart" data-name="Kiwi" data-price="199">&#x1F6D2 Add to Cart</button>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="contact">
+        <div class="contact-container">
+            <h1>Contact <span>Us</span></h1>
+            <p>If you have any questions, feedback, or inquiries, feel free to get in touch with us!</p>
+            <div class="contact-details">
+                <p><strong>Email:</strong> contact@pandascoop.com</p>
+                <p><strong>Phone:</strong> +91 7892717664</p>
+                <p><strong>Address:</strong> RV UNiversity,Banglore,India</p>
+            </div>
+            <form class="contact-form">
+                <label for="name">Your Name:</label>
+                <input type="text" id="name" name="name" required>
+                
+                <label for="email">Your Email:</label>
+                <input type="email" id="email" name="email" required>
+                
+                <label for="message">Your Message:</label>
+                <textarea id="message" name="message" rows="5" required></textarea>
+                
+                <button type="submit">Submit</button>
+            </form>
+        </div>
+    </section>
+
+    <script src="script.js"></script>
+</body>
+</html>
